@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>Omicron Angular Review</title>
+    <script src="/public/vendor/angular.min.js"></script>
+    <script src="/public/scripts/client-app.js"></script>
+  </head>
+  <body ng-controller="IndexController">
+    <h1>We are here</h1>
+    <p>
+      {{firstName}}
+    </p>
+    <p>
+      {{text}} <button ng-click="addPerson()">Click Me</button>
+    </p>
+    <ul ng-repeat="snack in snacks">
+      <li>
+        {{snack}}
+      </li>
+    </ul>
+    <ul ng-repeat="food in foods">
+      <li>
+        {{food.name}}
+      </li>
+    </ul>
+  </body>
+</html>
